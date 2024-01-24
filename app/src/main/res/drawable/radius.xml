@@ -1,0 +1,6 @@
+<!-- res/drawable/edittext_rounded_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="10dp" /> <!-- Задайте радиус закругления, например, 8dp -->
+    <solid android:color="@android:color/white" /> <!-- Задайте цвет фона, если нужно -->
+</shape>

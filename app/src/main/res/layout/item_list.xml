@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:background="#2E2E2E">
+    <ImageView
+        android:id="@+id/imageAuto"
+        android:layout_width="172dp"
+        android:layout_height="106dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        android:scaleType="fitXY"
+        app:srcCompat="?attr/actionBarDivider" />
+
+    <Button
+        android:id="@+id/photoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imageAuto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="108dp"
+        android:padding="0dp"
+        android:text="Выбрать фото"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/imageAuto"
+        android:scaleType="fitXY"
+        android:text="Модель"
+        android:textColor="#DDF4F4F4"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opisanie"
+        android:layout_width="216dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/imageAuto"
+        android:text="Краткое описавние"
+        android:textColor="#DDF4F4F4"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/opisanie"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/imageAuto"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="0dp"
+            android:text="—"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="1"
+            android:textColor="#DDF4F4F4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toStartOf="@+id/minus"
+            android:padding="0dp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
